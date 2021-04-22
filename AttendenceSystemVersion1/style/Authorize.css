@@ -1,0 +1,56 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #f2eded;
+}
+
+#container {
+    margin-top: 12vmax;
+}
+
+#textDiv {
+    padding-top: 5rem;
+}
+
+#loginDiv {
+    background-color: #e1e1e1;
+    padding: 80px;
+    border-radius: 5px;
+}
+
+#p1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #1877F2;
+    font-weight: bold;
+    font-family: 'Baskerville Old Face'
+}
+
+#p2 {
+    font-size: 22px;
+}
+
+#signIn {
+    margin: 10px;
+    text-align: center;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.error {
+    box-shadow: #ff0000 1px 1px 2px,#ff0000 -1px -1px 2px;
+}
+
+#errorLogin {
+    display: none;
+    color: red;
+}
+
+input + span {
+    display: none;
+}

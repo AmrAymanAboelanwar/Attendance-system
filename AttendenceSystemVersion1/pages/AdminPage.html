@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../style/bootstrap.min.css" rel="stylesheet" />
+    <script src="../js/JQuery-3.3.1.min.js"></script>
+    <script src="../model/Employee.js"></script>
+    <script src="../js/admin.js"></script>
+    <title>Employee</title>
+
+</head>
+
+<body class="bg-light">
+  
+    <div class=" w-100 text-center mt-3   ">
+        <div class="m-3 ">
+            <h3 >waiting List</h3>
+            <button id="save" class="btn btn-info">save reject</button>
+            <button id="saveapproved" class="btn btn-info">save approved</button>
+        </div>        
+        <table id="empTable" class="table  w-100 table-responsive-sm"> </table>
+       
+      
+     </div>
+     <div id="mainPanale" class=" w-75 text-center m-auto  ">
+         <div id="tabs">
+             <ul class="nav nav-tabs">
+                 <li class="nav-item">
+                     <a class="nav-link " href="#">All Employees</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Full Report</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="#">Late Report</a>
+                 </li>
+               
+             </ul>
+         </div>
+         <div id="tabContent" >
+            <table id="empTable2" class="table"></table>
+         </div>
+     </div>
+          
+        <script src="../js/bootstrap.js"></script>
+</body>
+    </html>

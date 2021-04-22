@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "ayman",
+    "password": "Ayman@1963",
+    "email": "ayman@gmail.com",
+    "address": "mansoura",
+    "age": 22,
+    "isSubAdmin": true,
+    "code": 5325
+  },
+  {
+    "id": 2,
+    "username": "sayeda",
+    "password": "nagy@123",
+    "email": "sayeda@gmail.com",
+    "address": "mansoura",
+    "age": 22,
+    "isSubAdmin": false,
+    "code": 56068
+  },
+  {
+    "id": 3,
+    "username": "sobhy",
+    "password": "Sobhy@19632",
+    "email": "amr.ayman667@gmail.com",
+    "address": "mansoura",
+    "age": 23,
+    "isSubAdmin": false,
+    "code": 30404
+  }
+]

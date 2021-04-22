@@ -1,0 +1,42 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border: 1px solid #0f6198;
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    margin: 35px auto;
+}
+
+#accordion {
+    margin: 3rem auto;
+}
+
+#empData {
+    text-align: justify;
+}
+
+    #empData span {
+        margin-left: 5px;
+        color: #cac2c2
+    }
+
+#body {
+    background: url(../images/p2.PNG);
+    height: 793px
+}
+
+#rightSection {
+    background-color: #e0e0e0;
+}
+
+#subAdmin {
+    position: relative;
+    left: 18%;
+}
+.alert{
+    display:none;
+}

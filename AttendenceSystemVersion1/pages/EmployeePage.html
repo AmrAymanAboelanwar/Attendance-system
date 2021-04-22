@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Employee</title>
+    <link href="../style/bootstrap.min.css" rel="stylesheet" />
+    <link href="../style/employee.css" rel="stylesheet" />
+    <script src="../model/Attend.js"></script>
+    <script src="../js/employee.js"></script>
+</head>
+<body>
+    <div id="container" class="col-12">
+        <header class="row bg-dark p-3">
+            <nav>
+                <a style="color:white" class="btn  btn-secondary" href="AuthorizePage.html">log out</a>
+            </nav>
+        </header>
+        <div id="body" class="row">
+
+            <section id="leftSection" class="d-none col-md-2 d-md-block " style="background-color:#3e3e3e">
+                <img src="../images/p1.jpg"/>
+
+                <article id="empData" style="color:white">
+                    <p>Name <span id="name">Amr Ayman</span></p>
+                    <p>Address <span id="address">Awish-AlHager</span></p>
+                    <p>Age <span id="age">23 year</span></p>
+                </article>
+
+            </section>
+
+            <section id="rightSection" class="col-12 col-md-9 offset-md-1 ">
+                <!--subAdmin-->
+            
+                <div class="alert alert-success m-5 p-3 text-center" role="alert">
+                  
+                </div>
+              
+                <div id="subAdmin" class=" text-center justify-content-center mt-5 bg-light p-4 w-50 ">
+                    <span id="errorSpan" style="display:none;color:red">this code not valid </span>
+
+                    <div class="form-group">
+                        <label for="Age" class=" text-center d-block ">record attendance </label>
+                        <input id="codeInput" type="text" class="form-control " placeholder="code">
+
+                    </div>
+
+                    <div class="  d-flex justify-content-center">
+                        <input type="button" id="attBtn" class="btn btn-success w-100" value="confirm attendance" />
+
+                    </div>
+
+
+                </div>
+
+                <div id="accordion" class="w-75 ">
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <button class="btn btn-link showData" data-toggle="collapse" data-target="#cardone">Daily Report</button>
+                        </div>
+                        <div class=" collapse " id="cardone" data-parent="#accordion">
+                            <div class="card-body text-left bg-transparent ml-3">
+
+
+                                <p>time attendance <span id="attTime">  8:00 Am</span></p>
+                                <p>delay <span id="delTime">  15 min</span></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card w-100">
+                        <div class="card-header">
+                            <button class="btn btn-link showData" data-toggle="collapse" data-target="#cardtwo">Monthly Report</button>
+                        </div>
+                        <div class=" collapse " id="cardtwo" data-parent="#accordion">
+                            <div class="card-body text-justify bg-transparent ml-3">
+
+                                <p>Attendance Times <span id="attTimes">20</span></p>
+                                <p>Late Times <span id="lateTimes">3</span></p>
+                                <p>Absence Times <span id="abseTimes">4</span></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        <footer class="bg-dark row">
+            <p class=" col-12 mt-1 d-flex justify-content-center " style="color:white">copy right for ITI &copy; 2020 by AAAA</p>
+        </footer>
+    </div>
+    <script src="../js/JQuery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>

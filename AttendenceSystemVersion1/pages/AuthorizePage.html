@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Authorize Page </title>
+    <link href="../style/bootstrap.min.css" rel="stylesheet" />
+    <link href="../style/Authorize.css" rel="stylesheet" />
+    <script src="../model/Employee.js"></script>
+    <script src="../js/Authorize.js"></script>
+ 
+</head>
+<body>
+
+    <button id="save" class="d-none">save</button>
+    <div id="container" class="col-12 row ">
+        <div id="textDiv" class=" col-12 d-block col-md-6">
+            <p id="p1">
+                Attendance System 2021
+            </p>
+            <p id="p2">
+                AS help company to know who employee attend or absent
+            </p>
+        </div>
+        <div id="loginDiv" class="col-12 d-block col-md-6 ">
+            <p id="errorLogin">invalid data</p>
+            <form method="get">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="loginUsername" aria-describedby="emailHelp" placeholder="UserName" required>
+
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                </div>
+                <input type="submit" class="btn btn-primary w-100" id="loginBtn" value="Log in">
+                <div id="signIn">
+                    <p>create new account <span class="btn-link m-1" data-toggle="modal" data-target="#form"> Sign up </span> </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="exampleModalLabel">Create New Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="get">
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="fname">username</label>
+                            <input type="text" class="form-control" id="usernameSignInput" aria-describedby="emailHelp" placeholder="username" required>
+                            <span>not valid</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lname">password</label>
+                            <input type="password" class="form-control" id="passwordSignInput" aria-describedby="emailHelp" placeholder="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                            <span>not valid</span>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="emailSignInput" aria-describedby="emailHelp" placeholder="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Address">Address</label>
+                            <input type="text" class="form-control" id="addressSignInput" aria-describedby="emailHelp" placeholder="Address" required>
+                            <span>not valid</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Age">Birth Date</label>
+                            <input type="date" class="form-control" id="ageSignInput" aria-describedby="emailHelp" placeholder="Age" max="1998-01-02" min="1960-01-02" required>
+                            <span>not valid</span>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <input type="submit" class="btn btn-success" value="Sign up" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/JQuery-3.3.1.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+</body>
+</html>
